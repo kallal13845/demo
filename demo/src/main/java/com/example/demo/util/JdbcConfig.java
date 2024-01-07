@@ -11,16 +11,16 @@ import javax.sql.DataSource;
 @Configuration
 public class JdbcConfig {
 
-    @Value("${spring.datasource.url}")
+    @Value("${mysql.datasource.url}")
     private String url;
 
-    @Value("${spring.datasource.username}")
+    @Value("${mysql.datasource.username}")
     private String username;
 
-    @Value("${spring.datasource.password}")
+    @Value("${mysql.datasource.password}")
     private String password;
 
-    @Value("${spring.datasource.driver-class-name}")
+    @Value("${mysql.datasource.driver-class-name}")
     private String driverClassName;
 
     @Bean
